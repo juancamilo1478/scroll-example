@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <section class="sec-01 ">
+
+    <h2 class="main-title">Mi firtd scroll</h2>
+
+    <div class="container">
+
+        <div class="content">
+            <div class="image">
+             <img src="03.jpeg" alt="" />
+            </div>
+
+
+        <div class="text-box">
+            <h3 >New york</h3>
+            <p>Nueva York incluye 5 distritos que se ubican donde el río Hudson desemboca en el océano Atlántico. En su centro se
+            encuentra Manhattan, un distrito densamente poblado que se encuentra entre los principales centros comerciales,
+            financieros y culturales del mundo</p>
+        </div>
+        </div>
+        <div class="media-icons">
+            <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>
+  
+    </div>
+    </section>
+
+    <section class="sec-02">
+        <div class="container">
+            <h3 class="section-title">Hamburgo</h3>
+            <div class="content">
+                <div class="image">
+                <img src="01.jpg" alt="" />
+                </div>
+
+                <div class="info">
+                    <h4 class="info-title">Description</h4>
+                    <p>Hamburgo, una importante ciudad portuaria en el norte de Alemania, está conectada con el mar del Norte por el río Elba.
+                    La cruzan cientos de canales y también contiene amplias áreas verdes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sec-03">
+        <div class="container">
+            <h3 class="section-title">Pamplona</h3>
+            <div class="content">
+                <div class="media-info">
+                   <li><a href="#" class="icon"><i class="fab fa-facebook"></i>Facebook</a></li>
+                   <li><a href="#" class="icon"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    <li><a href="#" class="icon"><i class="fab fa-twitter"></i>twiter</a></li>
+                    <li><a href="#" class="icon"><i class="fab fa-youtube"></i>youtube</a></li>
+                </div>
+                <div class="image">
+                    <img src="02.jpg" alt="" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // times scroll control
+        ScrollReveal({
+            reset:true,
+            distance:'60px',
+            duration:2500,
+            deplay:400
+        })
+
+        // control scroll
+
+        ScrollReveal().reveal('.main-title,.section-title ',{deplay:500,origin:'left'});
+        ScrollReveal().reveal('.sec-01,.image,.info', { deplay: 600, origin: 'bottom' });
+        ScrollReveal().reveal('.text-box', { deplay: 700, origin: 'right' });
+        ScrollReveal().reveal('.media-icons i', { deplay: 500, origin: 'bottom',interval:200 });
+        ScrollReveal().reveal('.media-info li', { deplay: 500, origin: 'left', interval: 200 });
+        ScrollReveal().reveal('.sec-02 .image', { deplay: 500, origin: 'top'});
+
+    </script>
+
+
+
+</body>
+</html>
